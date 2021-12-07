@@ -1,10 +1,29 @@
 body{margin-top:20px;
 background-color: #BC8F8F;}
+
 .section_padding_130 {
     padding-top: 130px;
     padding-bottom: 130px;
+	text-align:center
 }
-.faq_area {
+
+.section_padding_90 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+	text-align:center
+}
+.centre{
+	text-align:center
+}
+
+.accordion-button{
+	background-color: #fffaf0
+	}
+.accordion-body{
+	background-color: #fdf5e6
+}
+
+/*.faq_area {
     position: relative;
     z-index: 1;
     background-color: #BC8F8F;

@@ -11,8 +11,6 @@ background-color: #BC8F8F;}
     padding-top: 5px;
     padding-bottom: 50px;
 	text-align:center;
-	font-family:Ink Free;
-	font-weight: bold;
 	font-size:20px;
 }
 .section_padding_30 {
@@ -41,7 +39,31 @@ background-color: #BC8F8F;}
 .accordion-body{
 	background-color: #fdf5e6
 }
+@media only screen and (max-width: 575px) {
+    .support-button p {
+        font-size: 14px;
+    }
+}
 
+.support-button i {
+    color: #3f43fd;
+    font-size: 1.25rem;
+}
+@media only screen and (max-width: 575px) {
+    .support-button i {
+        font-size: 1rem;
+    }
+}
+
+.support-button a {
+    text-transform: capitalize;
+    color: #2ecc71;
+}
+@media only screen and (max-width: 575px) {
+    .support-button a {
+        font-size: 13px;
+    }
+}
 /*.faq_area {
     position: relative;
     z-index: 1;
@@ -97,28 +119,3 @@ background-color: #BC8F8F;}
     margin-bottom: 0;
 }
 
-@media only screen and (max-width: 575px) {
-    .support-button p {
-        font-size: 14px;
-    }
-}
-
-.support-button i {
-    color: #3f43fd;
-    font-size: 1.25rem;
-}
-@media only screen and (max-width: 575px) {
-    .support-button i {
-        font-size: 1rem;
-    }
-}
-
-.support-button a {
-    text-transform: capitalize;
-    color: #2ecc71;
-}
-@media only screen and (max-width: 575px) {
-    .support-button a {
-        font-size: 13px;
-    }
-}

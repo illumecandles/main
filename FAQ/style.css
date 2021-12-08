@@ -8,12 +8,31 @@ background-color: #BC8F8F;}
 }
 
 .section_padding_90 {
-    padding-top: 50px;
+    padding-top: 5px;
     padding-bottom: 50px;
-	text-align:center
+	text-align:center;
+	font-family:Ink Free;
+	font-weight: bold;
+	font-size:20px;
+}
+.section_padding_30 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+	text-align:center;
+}
+.section_padding_centre {
+    padding-top: 30px;
+    padding-bottom: 30px;
+	text-align:center;
+	font-family:Ink Free;
+	font-weight: bold;
+	font-size:20px;
 }
 .centre{
-	text-align:center
+	text-align:center;
+	font-family:Ink Free;
+	font-weight: bold;
+	font-size:20px;
 }
 
 .accordion-button{

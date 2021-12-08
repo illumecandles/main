@@ -39,31 +39,33 @@ background-color: #BC8F8F;}
 .accordion-body{
 	background-color: #fdf5e6
 }
-@media only screen and (max-width: 575px) {
-    .support-button p {
-        font-size: 14px;
-    }
+
+#header{
+background:#BC8F8F;
+font-size:200%;
+}
+#main{
+min-height:600px;
+background:#d393ed;
+font-size:150%;
+background:#BC8F8F;
+}
+#header1{
+flex:2;
+text-align:center;
+background:#BC8F8F;
 }
 
-.support-button i {
-    color: #3f43fd;
-    font-size: 1.25rem;
-}
-@media only screen and (max-width: 575px) {
-    .support-button i {
-        font-size: 1rem;
-    }
+
+#header2{
+display:flex;
+flex:10;
+align-items:center;
+background:#BC8F8F;
 }
 
-.support-button a {
-    text-transform: capitalize;
-    color: #2ecc71;
-}
-@media only screen and (max-width: 575px) {
-    .support-button a {
-        font-size: 13px;
-    }
-}
+
+
 /*.faq_area {
     position: relative;
     z-index: 1;

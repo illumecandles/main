@@ -14,7 +14,7 @@ function signup(){
 		}
 	else if(user != ""){
 	var firstName = user.split(' ').slice(0, -1).join(' ');
-	//alert(firstName+ ", Sign up was successful \nKeep an eye on  " + email+" for all the latest offers!");
+	alert(firstName+ ", Sign up was successful \nKeep an eye on  " + email+" for all the latest offers!");
 		}
 	
 }

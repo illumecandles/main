@@ -5,12 +5,13 @@ function signup(){
 	//var user
 	var user=document.getElementById("name").value;
 	var email=document.getElementById("emailadr").value;
-	
+	var valid;
 	if (user == "")
 		{
         alert("You need to enter your name.");
         //user.focus();
-        return false;
+        valid=false;
+		document.getElementById("test").innerHTML = 'invalid';
 		}
 	else if(user != ""){
 	var firstName = user.split(' ').slice(0, -1).join(' ');

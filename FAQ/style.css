@@ -1,11 +1,6 @@
 body{margin-top:20px;
 background-color: #BC8F8F;}
 
-/* Modify brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: #BC8F8F;
-}
 
 .abs-center-x {
     position: absolute;

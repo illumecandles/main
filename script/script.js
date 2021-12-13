@@ -11,7 +11,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
+// Carousel continued - display images
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -28,7 +28,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+/*JQuery Slide message on Home page
+ $(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+}); */
 
 
 //Contact Us Page - Contact form 
@@ -40,7 +45,6 @@ function formChecker(){
 	var phone=document.getElementById("formPhone").value;
 	var description=document.getElementById("formDescription").value;
 	alert(name+ ",  thank you for your contact details. Illume Candles will be in touch via "  +email+ ", as soon as possible.");
-	
 		
 	}
 	

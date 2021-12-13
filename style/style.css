@@ -192,7 +192,7 @@ Fade JQuery message on Home page  */
 }
 
 /* Contact us page form */
-cform{
+ #myform{
 	
 	font-family:Helvetica;
 	color:white;
@@ -257,7 +257,7 @@ cform{
 	z-index:1;
 	}
 /*used to show the faq question list*/
-.accordion-body{
+.accordion-b{
 background-color: #fdf5e6;
 z-index:9;
 }

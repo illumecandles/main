@@ -152,7 +152,7 @@ img {
   to {opacity: 1}
 }
 /* 
-Fade JQuery message on Home page
+Fade JQuery message on Home page  */
 #panel, #flip {
   padding: 5px;
   text-align: center;
@@ -163,7 +163,7 @@ Fade JQuery message on Home page
 #panel{
   padding: 50px;
   display: none;
-} */
+}
 
 
 /* Testimonials on Home page*/

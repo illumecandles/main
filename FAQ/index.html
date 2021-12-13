@@ -7,12 +7,17 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/2b99ad0f6b.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="style.css"/>
+   
+	<meta charset="UTF-8">
+	<meta name="description" content="Discover Illume Candles, Irish handcrafted candles">
+	<meta name="keywords" content="Aromatic candles, customized candles, decorative candles, Christmas candles, gifts, faq, delivery, payment, packaging">
+   
    </head>
    <body>
    <!--Top flag to use when people scroll to bottom of pages-->
       <a id="top"></a>
 	  <!--using a bootstrap navbar that has icons and text, text disappears at a lower resolution-->
-      <nav class="navbar navbar-custom navbar-expand  justify-content-center">
+      <nav class="navbar navbar-custom navbar-expand justify-content-center" id="navbar" >
          <a class="navbar-brand" href="#"><img src="../images/logo.jpeg" alt="illume candles" ></a>
          <div class="container">
             <ul class="navbar-nav nav-justified w-100 text-center mt-1">
@@ -44,7 +49,7 @@
          </div>
       </nav>
 	  <!--secondary navbar to jump to section on page-->
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFE4E1;" >
+      <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #FFE4E1;" >
          <div class="container-fluid">
             <div class="col-2 centre">
             </div>
@@ -367,7 +372,7 @@
                   <input type="text" id="name" name="name" placeholder="Full Name" required/>
                   <input type="email" id="emailadr" name="email" placeholder="Email Address" required/>
                   <button type="button" onclick="signup()" name="subscribe">Subscribe</button>
-                  <h1 id='test'>not valid</h1>
+                 
                </form>
             </div>
          </div>

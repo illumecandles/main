@@ -18,6 +18,8 @@ background-color: #BC8F8F;}
     padding-bottom: 50px;
 	text-align:center;
 	font-size:20px;
+	position:relative;
+	
 }
 /*Section padding used for FAQ*/
 .section_padding_30 {
@@ -43,12 +45,18 @@ background-color: #BC8F8F;}
 }
 /*used to show the faq question list colour*/
 .accordion-button{
-	background-color: #fffaf0
+	z-index:1;
 	}
 /*used to show the faq question list*/
 .accordion-body{
-	background-color: #fdf5e6
+background-color: #fdf5e6;
+z-index:9;
 }
+.accordion-item{
+background-color: #fffaf0;
+z-index:9;
+}
+
 /*used to show the inital popup box and dim the background*/
 #list-builder {
     position: fixed;
@@ -60,6 +68,7 @@ background-color: #BC8F8F;}
     filter: alpha(opacity=80);
 	opacity: 0.8;
     display: none;
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
 }
 
 #popup-box {
@@ -75,6 +84,7 @@ background-color: #BC8F8F;}
     border: 10px solid #fdf5e6;
     display: none;
 	border-radius: 25px; /*round the box to make it softer*/
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
 }
 /*styling elements for mailing list popup close button */
 #popup-close {
@@ -83,14 +93,18 @@ background-color: #BC8F8F;}
     right: -25px;
     cursor: pointer;
     width: 40px;
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
 }
 /*styling elements for mailing list popup */
 #popup-box h1 {
     margin: 0;
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
+	
 }
 /*styling elements for mailing list popup form*/
 #popup-box form {
     margin-bottom: 0px;
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
 }
 /*styling elements for mailing list popup input cells*/
 #popup-box input {
@@ -99,6 +113,7 @@ background-color: #BC8F8F;}
     width: 40%;
 	border-radius: 25px; /*round the box to make it softer*/
 	text-align:center;
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
 }
 /*styling elements for mailing list popup subscribe button*/
 #popup-box button {
@@ -121,5 +136,35 @@ background-color: #BC8F8F;}
   text-align: center;
   transition: color 100ms;
   vertical-align: baseline;
+  z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
  }
+.#navbar {
+  
+  background-color: #333;
+  z-index: 9999;/* added z-index as the popup page was causing issues with the sticky bar */
+}
 
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+/* using a sticky navbar with some JS to make it stay at the top while scrolling */
+.sticky {
+ position: fixed;
+ top: 0px;
+  width: 100%;
+  background-color: #BC8F8F;
+  z-index:999;/* added z-index as the popup page was causing issues with the sticky bar */
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+   padding-top: 60px;
+  background-color: #BC8F8F;
+  z-index:999;/* added z-index as the popup page was causing issues with the sticky bar */
+}

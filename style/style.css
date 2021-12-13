@@ -192,7 +192,7 @@ Fade JQuery message on Home page  */
 }
 
 /* Contact us page form */
-form{
+cform{
 	
 	font-family:Helvetica;
 	color:white;
@@ -311,7 +311,7 @@ z-index:9;
 	
 }
 /*styling elements for mailing list popup form*/
-#popup-box form {
+#popup-box f {
     margin-bottom: 0px;
 	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
 }

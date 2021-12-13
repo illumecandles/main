@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-GB">
    <head>
-      <title>Project illume FAQ</title>
+      <title>FAQ Illume Candles</title>
+	  <!--Linking Bootstrap,and Fontawesome to pull in framework and icons-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/2b99ad0f6b.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="style.css"/>
    </head>
    <body>
+   <!--Top flag to use when people scroll to bottom of pages-->
       <a id="top"></a>
+	  <!--using a bootstrap navbar that has icons and text, text disappears at a lower resolution-->
       <nav class="navbar navbar-custom navbar-expand  justify-content-center">
          <a class="navbar-brand" href="#"><img src="../images/logo.jpeg" alt="illume candles" ></a>
          <div class="container">
@@ -20,13 +23,13 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a href="../products/" class="nav-link d-flex flex-column" data-toggle="collapse">
+                  <a href="../products/Index.html" class="nav-link d-flex flex-column" data-toggle="collapse">
                   <span class="fas fa-gift fa-3x" style="color:  #fdf5e6"></span>
                   <span class="d-none d-sm-inline mt-1" style="color:  #fdf5e6">products</span>
                   </a>
                </li>
                <li class="nav-item">
-                  <a href="../contact/" class="nav-link d-flex flex-column" data-toggle="collapse">
+                  <a href="../contact/contact.html" class="nav-link d-flex flex-column" data-toggle="collapse">
                   <span class="fas fa-at fa-3x" style="color:  #fdf5e6"></span>
                   <span class="d-none d-sm-inline mt-1" style="color:  #fdf5e6">contact us</span>
                   </a>
@@ -40,6 +43,7 @@
             </ul>
          </div>
       </nav>
+	  <!--secondary navbar to jump to section on page-->
       <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFE4E1;" >
          <div class="container-fluid">
             <div class="col-2 centre">
@@ -65,6 +69,7 @@
          <div class="row">
             <div class="col-3 section_padding_centre">
             </div>
+			<!--start of first accordian section for faq, have defaulted the first one to be opened so user can see what should happen-->
             <div class="col-6 section">
                <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
@@ -167,6 +172,7 @@
             </div>
          </div>
       </div>
+	  <!--used a secondary container for each accordian as they only lined up as equal width this way-->
       <div class="container-fluid">
          <div class="row">
             <div class="col-3">
@@ -264,6 +270,7 @@
             </div>
          </div>
       </div>
+	  <!--used another container for each accordian as they only lined up as equal width this way-->
       <div class="container-fluid">
          <div class="row">
             <div class="col-3">
@@ -332,18 +339,21 @@
             </div>
          </div>
       </div>
+	  <!--added a tag so that users can pop back to the top used a fontawesome arrow for this-->
       <div class="container-fluid">
          <div class="row">
             <div class="col-3 centre">
                <a href="#top"><i class="fas fa-arrow-alt-circle-up fa-4x" style="color: #fffaf0"></i></a>
                <p>Back to top</p>
             </div>
+			<!--Standard page footer with T&C and Privacy policy-->
             <div class="col-6 section_padding_centre">
                <div class="link"><a href="Terms-and-Conditions-Illume.pdf" target=”_blank”>Terms and Conditions</a></div>
                <div class="link"><a href="privacy.pdf" target=”_blank”>Privacy Policy</a></div>
                <p>&#169; Illume Candles 2021</p>
             </div>
          </div>
+		 <!--JQuery to add popup - should be customised to appear for certain cookie expiration but wanted it to show when being examined---->
          <div id="list-builder"></div>
          <div id="popup-box">
             <img src="close.png" id="popup-close" alt="Close this dialog"/> 
@@ -362,6 +372,7 @@
             </div>
          </div>
       </div>
+	   <!--Link in my Jquery library and added my jQuery code and JavaScript---->
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script src="list-builder.js"></script>
       <script src="function.js"></script>

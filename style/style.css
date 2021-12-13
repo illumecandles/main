@@ -18,21 +18,13 @@ body{
 	font-size:150%;
 	background:#BC8F8F;
 }
-#header1{
-	flex:2;	
-	text-align:center;	
-	background:#BC8F8F;
-}
+
 .link,.foot{
 	flex:3;
 	text-align:center;	
 }
-#header2{
-	display:flex;
-	flex:10;	
-	align-items:center;
-	background:#BC8F8F;
-}
+
+/* story on mainpage */
 #sidebar{
 	flex:2;
 	padding:5%;
@@ -159,6 +151,20 @@ img {
   from {opacity: .4}
   to {opacity: 1}
 }
+/* 
+Fade JQuery message on Home page
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background:#9f6060;
+  border: solid 1px #c3c3c3;
+}
+
+#panel{
+  padding: 50px;
+  display: none;
+} */
+
 
 /* Testimonials on Home page*/
 #col-sm-6{
@@ -193,11 +199,11 @@ form{
 	background:#9f6060;
 	line-height:1.5;
 	align-items:center;
-	height: 600px;
-	width: 600px;
+	height: 800px;
+	width: 800px;
 	text-align:center;
 	padding-top: 5px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 	margin-left:auto;
 	margin-right:auto;
 	

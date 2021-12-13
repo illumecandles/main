@@ -28,12 +28,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-/*JQuery Slide message on Home page
+/*JQuery Slide message on Home page*/
  $(document).ready(function(){
   $("#flip").click(function(){
     $("#panel").slideDown("slow");
   });
-}); */
+}); 
 
 
 //Contact Us Page - Contact form 

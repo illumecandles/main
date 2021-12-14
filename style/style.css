@@ -187,12 +187,8 @@ img {
 }
 
 /* Contact us page form */
-<<<<<<< HEAD
+
 #myform{	
-=======
- #myForm{
-	
->>>>>>> ab1586bcdfe5daf763d44730ff678abc01408b50
 	font-family:Helvetica;
 	color:black;
 	background:#FFE4E1;
@@ -207,7 +203,7 @@ img {
 	margin-right:auto;
 	
 }
-/* Css stypling for FAQ page below this line*/
+/* Css styling for FAQ page below this line*/
 
 
 .abs-center-x {
@@ -359,7 +355,7 @@ padding-right: 5px;
   z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
  }
 .#navbar {
-  
+ 
   background-color: #333;
   z-index: 9999;/* added z-index as the popup page was causing issues with the sticky bar */
 }

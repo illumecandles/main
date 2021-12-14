@@ -47,15 +47,11 @@ img {
   height: auto;
 }
 
-
 @media (max-width: 992px) {
 	body {
 	  background-color:white;
 	}
   }
-
-
- 
  
 * {box-sizing:border-box}
 
@@ -82,7 +78,7 @@ img {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: 0.4s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -95,13 +91,13 @@ img {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.6);
 }
 
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -148,11 +144,11 @@ img {
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity:.4}
   to {opacity: 1}
 }
-/* 
-Fade JQuery message on Home page  */
+
+/* Fade JQuery message on Home page  */
 #panel, #flip {
   padding: 5px;
   text-align: center;
@@ -164,7 +160,6 @@ Fade JQuery message on Home page  */
   padding: 50px;
   display: none;
 }
-
 
 /* Testimonials on Home page*/
 #col-sm-6{
@@ -192,8 +187,7 @@ Fade JQuery message on Home page  */
 }
 
 /* Contact us page form */
-form{
-	
+#myform{	
 	font-family:Helvetica;
 	color:white;
 	background:#9f6060;

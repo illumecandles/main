@@ -36,7 +36,7 @@ body{
 a{
 	color:white;
 }
-input,textarea{
+cinput,textarea{
 	font-size:50pt;
 	width:100%;
 	height:100px;
@@ -49,7 +49,7 @@ img {
 
 @media (max-width: 992px) {
 	body {
-	  background-color:white;
+	  background-color:grey;
 	}
   }
  
@@ -187,18 +187,204 @@ img {
 }
 
 /* Contact us page form */
+<<<<<<< HEAD
 #myform{	
+=======
+ #myForm{
+	
+>>>>>>> ab1586bcdfe5daf763d44730ff678abc01408b50
 	font-family:Helvetica;
-	color:white;
-	background:#9f6060;
+	color:black;
+	background:#FFE4E1;
 	line-height:1.5;
 	align-items:center;
-	height: 800px;
-	width: 800px;
+	height: 350px;
+	width: 500px;
 	text-align:center;
 	padding-top: 5px;
     padding-bottom: 60px;
 	margin-left:auto;
 	margin-right:auto;
 	
+}
+/* Css stypling for FAQ page below this line*/
+
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*Section padding used for FAQ*/
+.section {
+   	text-align:center;
+	font-size:20px;
+	color:black;
+}
+/*Section padding used for FAQ*/
+.section_padding_90 {
+    padding-top: 5px;
+    padding-bottom: 50px;
+	text-align:center;
+	font-size:20px;
+	position:relative;
+	
+}
+/*Section padding used for FAQ*/
+.section_padding_30 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+	text-align:center;
+}
+/*Section padding used for FAQ*/
+.section_padding_centre {
+    padding-top: 30px;
+    padding-bottom: 30px;
+	text-align:center;
+	font-family:Ink Free;
+	font-weight: bold;
+	font-size:20px;
+	
+}
+/*centre formatting used for FAQ*/
+.centre{
+	text-align:center;
+	font-family:Ink Free;
+	font-weight: bold;
+	font-size:20px;
+}
+/*used to show the faq question list colour*/
+.accordion-button{
+	z-index:1;
+	}
+/*used to show the faq question list*/
+.accordion-b{
+background-color: #fdf5e6;
+z-index:9;
+color:black;
+text-align:center;
+font-size:20px;
+padding-left: 5px;
+padding-right: 5px;
+}
+.accordion-item{
+background-color: #fffaf0;
+z-index:9;
+color:black;
+text-align:center;
+font-size:20px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+/*used to show the inital popup box and dim the background*/
+#list-builder {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+    display: none;
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
+}
+
+#popup-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #BC8F8F;
+    color: #fdf5e6;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border: 10px solid #fdf5e6;
+    display: none;
+	border-radius: 25px; /*round the box to make it softer*/
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
+}
+/*styling elements for mailing list popup close button */
+#popup-close {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    cursor: pointer;
+    width: 40px;
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
+}
+/*styling elements for mailing list popup */
+#popup-box h1 {
+    margin: 0;
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
+	
+}
+/*styling elements for mailing list popup form*/
+#popup-box f {
+    margin-bottom: 0px;
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
+}
+/*styling elements for mailing list popup input cells*/
+#popup-box input {
+    padding: 10px;
+    border: 1px solid #333;
+    width: 40%;
+	border-radius: 25px; /*round the box to make it softer*/
+	text-align:center;
+	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
+}
+/*styling elements for mailing list popup subscribe button*/
+#popup-box button {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+  z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
+ }
+.#navbar {
+  
+  background-color: #333;
+  z-index: 9999;/* added z-index as the popup page was causing issues with the sticky bar */
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+/* using a sticky navbar with some JS to make it stay at the top while scrolling */
+.sticky {
+ position: fixed;
+ top: 0px;
+  width: 100%;
+  background-color: #BC8F8F;
+  z-index:999;/* added z-index as the popup page was causing issues with the sticky bar */
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+   padding-top: 60px;
+  background-color: #BC8F8F;
+  z-index:999;/* added z-index as the popup page was causing issues with the sticky bar */
 }

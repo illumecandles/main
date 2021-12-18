@@ -1,3 +1,6 @@
+//https://www.thepolyglotdeveloper.com/2018/02/create-email-subscription-popup-jquery//
+//Taken from this site//
+
 $(document).ready(function() {
 
     var delay = 300; // milliseconds

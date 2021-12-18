@@ -331,15 +331,15 @@ padding-right: 5px;
 #popup-box input {
     padding: 10px;
     border: 1px solid #333;
-    width: 40%;
+    width: 30%;
 	border-radius: 25px; /*round the box to make it softer*/
 	text-align:center;
 	z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
 }
 /*styling elements for mailing list popup subscribe button*/
-#popup-box button {
+#popup-box input[type=submit]{/*add to add this to distinguish it from the input popup elements*/
   background-color: #EA4C89;
-  border-radius: 8px;
+  border-radius: 8px;/*rounding the input boxes for a softer feel*/
   border-style: none;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -357,6 +357,7 @@ padding-right: 5px;
   text-align: center;
   transition: color 100ms;
   vertical-align: baseline;
+  width: 30%;/*to keep items on the same line*/
   z-index:9999;/* added z-index as the popup page was causing issues with the sticky bar */
  }
 .#navbar {

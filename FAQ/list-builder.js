@@ -1,5 +1,6 @@
 //https://www.thepolyglotdeveloper.com/2018/02/create-email-subscription-popup-jquery//
 //Taken from this site//
+// i've removed some redundant code for my example//
 
 $(document).ready(function() {
 
@@ -16,7 +17,7 @@ $(document).ready(function() {
             $("#popup-box").fadeIn("fast", () => {});
         });
 
-        $("button[name=subscribe]").click(() => {
+        $("#popup-f").submit(() => {//I've changed this line to pick up the fact that its a submit button on my form//
       	$("#popup-box-content").html("<p style='text-align: center'>Thank you for joining our mailing list!</p>");
         });
 

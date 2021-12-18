@@ -369,13 +369,18 @@
                   We'll keep you informed about our new products and most importantly, when you can bag a bargain in our Christmas Sale!
                </p>
                <form id="popup-f">
+				<form onsubmit="return false">
                   <input type="text" id="name" name="name" placeholder="Full Name" required/>
-                  <input type="email" size="15" minlength="5" id="emailadr" name="email" placeholder="person@example.com" required/>
-                  <button type="button" onclick="signup()" name="subscribe">Subscribe</button>
-                 
+                  <input type="email" size="5" minlength="5" id="emailadr" name="email" placeholder="this@goo.com" />
+                  <input type="submit" id="button-pop-form" onclick="ValidateEmail(email)" onsubmit="return false" name="subscribe">
+                </form>
                </form>
+			
             </div>
          </div>
+		
+		 
+		 
       </div>
 	   <!--Link in my Jquery library and added my jQuery code and JavaScript-->
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

@@ -18,12 +18,26 @@ function myFunction() {
 
 
 //This will alert the user that the signup is successful//
-//I've used the split funtion to get the first name of the user to use the in the alert
-function signup(){
-	//var user
+// used https://www.w3resource.com/javascript/form/email-validation.php for help here//
+//I've used the split funtion to get the first name of the user to use the in the alert	//
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+	var user
 	var user=document.getElementById("name").value;
 	var email=document.getElementById("emailadr").value;
 	var firstName = user.split(' ').slice(0, -1).join(' ');
-	alert(firstName+ ", Sign up was successful \nKeep an eye on  " + email+" for all the latest offers!");
-		}
+alert(firstName+ " Valid email address!");
+document.form1.email.focus();
+return false;
 	
+}
+else
+{
+alert("You have entered an invalid email address!");
+emailadr.focus();
+return false;
+}
+}

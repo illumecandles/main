@@ -64,10 +64,10 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 section">
-         
+  <div id='submsg'>       
 	<h1>&nbsp; &nbsp;  Contact Form <h1>
 
-<p> &nbsp; &nbsp;If you would like more information, please fill in the form below: </p>
+		&nbsp; &nbsp;If you would like more information, please fill in the form below: </div>
 
 </div>
 <div class="container-fluid">
@@ -80,15 +80,13 @@
 		<label for="formname">Name:</label><br>
         <input type="text" id="formName" required/><br/>
 		<label for="email">Email</label><br>
-		<input type="email" id="formEmail" onsubmit="return validateemail(); placeholder="example@hotmail.com" required /><br/>
-		
-        <!-- <input type="email" id="formEmail" pattern=".+@example\.com" required /><br/> -->
+		<input type="email" id="formEmail" onsubmit="validateemail()" placeholder="example@hotmail.com" required /><br/>
 		<label for="formPhone">Phone Number</label><br>
 		<input type="phone" id="formPhone"/><br/>
 		<label for="formDescription">Describe your request</label><br>
 		<input type="description" id="formDescription"/><br/>
 		<br>
-        <input type="submit"><br/>
+        <input type="submit" onclick="changemessage()"><br/>
     </form> 	 
 			
 		</div>

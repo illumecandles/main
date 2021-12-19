@@ -57,4 +57,6 @@ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
   return false;  
   }  
 }  
-	
+function changemessage() {
+  document.getElementById("submsg").innerHTML = "One of our team will be in touch soon!";
+}	

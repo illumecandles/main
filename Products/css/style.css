@@ -2,7 +2,7 @@
 
 #aromatic{
 text-align:center;
-color: #B8860B;
+color: #BC8F8F;
 font-family:Ink Free;
 font-weight: bold;
 font-size: 50px;
@@ -18,21 +18,21 @@ font-size: 50px;
 
 #decorative{
 text-align:center;
-color: #228B22;
+color: #BC8F8F;
 font-family:Ink Free;
 font-weight: bold;
 font-size: 50px;
 }
 #gifts{
 text-align:center;
-color: #00BFFF;
+color: #BC8F8F;
 font-family:Ink Free;
 font-weight: bold;
 font-size: 50px;
 }
 #customized{
 text-align:center;
-color: #9932CC;
+color: #BC8F8F;
 font-family:Ink Free;
 font-weight: bold;
 font-size: 50px;
@@ -130,7 +130,7 @@ font-size: 50px;
   padding: 8px 16px;
   border: none;
   background: black;
-  color: #f2f2f2;
+  color: #fffaf0;
   font-family:Ink Free;
   font-weight: bold;
   letter-spacing: .09em;
@@ -138,9 +138,9 @@ font-size: 50px;
 }
 
 .flex-outer{
-background-color: #FFE4E1;
+background-color:#BC8F8F;
 border-radius: 20px;
-border-color:#BC8F8F;
+border-color:#fffaf0;
 border-style: solid;
 border-width: 20px;
 text-align:center;
@@ -150,7 +150,7 @@ text-align:center;
 
 #cust{
 text-align:center;
-color: black;
+color: #fffaf0;
 font-family:Ink Free;
 font-size:20px;
 font-weight: normal;}
@@ -158,8 +158,12 @@ font-weight: normal;}
 .pform{
 font-size:20px;
 font-weight: bold;
+color:#fffaf0;
 }
 
+#customForm{
+color: #fffaf0;
+}
 .error{
    color: red;
    font-style: italic;

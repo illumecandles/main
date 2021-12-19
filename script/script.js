@@ -1,4 +1,4 @@
-//Carousel settings
+//Carousel settings altered code found on Stack overflow
 var slideIndex = 1;
 showSlides(slideIndex);
 

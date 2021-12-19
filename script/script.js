@@ -1,4 +1,4 @@
-//Carousel settings altered code found on Stack overflow
+//Carousel settings altered code found on Stack overflow and W3 schools (https://www.w3schools.com/howto/howto_js_slideshow.asp)
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -47,4 +47,14 @@ function formChecker(){
 	alert(name+ ",  thank you for your contact details. Illume Candles will be in touch via "  +email+ ", as soon as possible.");
 		
 	}
+	
+function validateemail()  {  
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+}  
 	

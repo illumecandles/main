@@ -29,9 +29,8 @@ if(inputText.value.match(mailformat))
 	var user=document.getElementById("name").value;
 	var email=document.getElementById("emailadr").value;
 	var firstName = user.split(' ').slice(0, -1).join(' ');
-alert(firstName+ " Valid email address!");
-document.form1.email.focus();
-return false;
+alert(firstName+ " your email is valid");
+return true;
 	
 }
 else

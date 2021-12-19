@@ -358,7 +358,8 @@
                <p>&#169; Illume Candles 2021</p>
             </div>
          </div>
-		 <!--JQuery to add popup - should be customised to appear for certain cookie expiration but wanted it to show when being examined-->
+		 <!--JQuery to add popup - should be customised to appear for certain cookie expiration but wanted it to show when being examined
+		 have customised the appearance of this popup to match site style-->
          <div id="list-builder"></div>
          <div id="popup-box">
             <img src="../images/close.png" id="popup-close" alt="Close this dialog"/> 
@@ -368,11 +369,11 @@
                <p>
                   We'll keep you informed about our new products and most importantly, when you can bag a bargain in our Christmas Sale!
                </p>
-               <form id="popup-f" onsubmit="return false">
+               <form id="popup-f">
 				
                   <input type="text" id="name" name="name" placeholder="Full Name" required/>
-                  <input type="email" size="5" minlength="5" id="emailadr" name="email" placeholder="this@goo.com" />
-                  <input type="submit" id="button-pop-form" onclick="ValidateEmail(email)" onsubmit="return false" name="subscribe">
+                  <input type="email" size="5" minlength="5" id="emailadr" name="email" placeholder="this@goo.com" required/>
+                  <input type="submit" id="button-pop-form" onclick="ValidateEmail(email)"  name="subscribe">
                 
                </form>
 			
